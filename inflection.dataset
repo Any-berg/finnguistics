@@ -1,0 +1,540 @@
+# special characters: # , _ &shy;
+
+# null group (with minor variation in genitive and illative forms) 
+ahven,ahven_en,ta,essa,esta,een
+taimen,taimen
+haiven,haiven
+sisar,sisar
+tyven,tyven_en,tä,essä,estä,een
+hiven,hiven
+sävel,sävel
+nivel,nivel
+maa,maa_n,ta,ssa,sta,han
+pää,pää_n,tä,ssä,stä,hän
+kabaree,kabaree_n,ta,ssa,sta,(see|he)n
+tie,tie_n,tä,ssä,stä,hen
+tee,tee
+suo,suo_n,ta,ssa,sta,hon
+työ,työ_n,tä,ssä,stä,hön
+miljöö,miljöö_n,tä,ssä,stä,(see|hö)n
+palttoo,palttoo_n,ta,ssa,sta,seen
+shampoo,shampoo_n,ta,ssa,sta,(see|ho)n
+kuu,kuu_n,ta,ssa,sta,hun
+kesä&shy;kuu,kesä&shy;kuu
+kyy,kyy_n,tä,ssä,stä,hyn
+pilttuu,pilttuu_n,ta,ssa,sta,seen
+vastuu,vastuu
+takuu,takuu
+hakkuu,hakkuu_n,ta,ssa,sta,(see|hu)n
+
+# unsplit I-ending words are fudged in (w/out the I) to also fit the null group
+# without this hack, grouping other I-ending words gets unnecessarily complex
+suuri,suuri_en,ta,essa,esta,een
+yli&shy;suuri,yli&shy;suuri
+juuri,juuri
+lohi,lohi
+tuli,tuli
+avo&shy;tuli,avo&shy;tuli
+vuori,vuori
+suoli,suoli
+jousi,jousi
+kaari,kaari
+kuusi,kuusi
+pieni,pieni_en,tä,essä,estä,een
+ääni,ääni
+kieli,kieli
+riihi,riihi
+tiili,tiili
+puna&shy;tiili,puna&shy;tiili
+meri,meri_en,ta,essä,estä,een
+väli&shy;meri,väli&shy;meri
+veri,veri
+laskimo&shy;veri,laskimo&shy;veri
+viini,viini
+
+# groups for words ending in possible consonants S, L, N, R & T
+varas,v_arkaan,arasta,arkaassa,arkaasta,arkaaseen
+opas,o_ppaan,pasta,ppaassa,ppaasta,ppaaseen
+rypäs,ry_ppään,pästä,ppäässä,ppäästä,ppääseen
+ratas,ra_ttaan,tasta,ttaassa,ttaasta,ttaaseen
+mätäs,mä_ttään,tästä,ttäässä,ttäästä,ttääseen
+kinnas,kin_taan,nasta,taassa,taasta,taaseen
+rynnäs,ryn_tään,nästä,täässä,täästä,tääseen
+varras,var_taan,rasta,taassa,taasta,taaseen
+allas,al_taan,lasta,taassa,taasta,taaseen
+pallas,pal
+varvas,var_paan,vasta,paassa,paasta,paaseen
+ryväs,ry_pään,västä,päässä,päästä,pääseen
+valtias,valti_aan,asta,aassa,aasta,aaseen
+patsas,pats
+rastas,rast
+hirvas,hirv
+teuras,teur
+valas,val
+räystäs,räyst_ään,ästä,äässä,äästä,ääseen
+ylväs,ylv
+mies,m_iehen,iestä,iehessä,iehestä,ieheen
+kirves,kir_veen,vestä,veessä,veestä,veeseen
+ies,i_keen,estä,keessä,keestä,keeseen
+äes,ä
+ruis,ru_kiin,ista,kiissa,kiista,kiiseen
+apeus,ape_uden,utta,udessa,udesta,uteen
+hartaus,harta
+autius,auti
+kuninkuus,kuninku
+eheys,ehe_yden,yttä,ydessä,ydestä,yteen
+äitiys,äiti
+nöyryys,nöyry
+varis,vari_ksen,sta,ksessa,ksesta,kseen
+jalas,jala
+pallas,palla
+kannas,kanna
+alus,alu
+nivus,nivu
+muokkaus,muokkau
+huokaus,huokau
+hautaus,hautau
+vastus,vastu
+hallitus,hallitu
+hauis,haui
+tervas,terva
+kives,kive_ksen,stä,ksessä,ksestä,kseen
+herätys,heräty
+keräys,keräy
+ilves,ilve
+rötös,rötö
+
+kannel,kan_telee?n,(nel|telet)ta,telee?ssa,telee?sta,tele(ese)?en
+ommel,om_pelee?n,(mel|pelet)ta,pelee?ssa,pelee?sta,pele(ese)?en
+vemmel,vem_pelee?n,(mel|pelet)tä,pelee?ssä,pelee?stä,pele(ese)?en
+taival,tai_palee?n,(val|palet)ta,palee?ssa,palee?sta,pale(ese)?en
+askel,aske_lee?n,l(t|ett)a,lee?ssa,lee?sta,le(ese)?en
+sammal,samma
+petkel,petke_lee?n,l(t|ett)ä,lee?ssä,lee?stä,le(ese)?en
+kyynel,kyyne
+seppel,seppe
+
+nainen,nai_sen,sta,sessa,sesta,seen
+nokkonen,nokko
+kaavin,kaa_pimen,vinta,pimessa,pimesta,pimeen
+särvin,sär_pimen,vintä,pimessä,pimestä,pimeen
+kaadin,kaa_timen,dinta,timessa,timesta,timeen
+säädin,sää_timen,dintä,timessä,timestä,timeen
+soitin,soit_timen,inta,timessa,timesta,timeen
+liitin,liit_timen,intä,timessä,timestä,timeen
+osaton,osat_toman,onta,tomassa,tomasta,tomaan
+nimetön,nimet_tömän,öntä,tömässä,tömästä,tömään
+avain,avai_men,nta,messa,mesta,meen
+puhelin,puheli
+morsian,morsia
+survin,survi
+survoin,survoi
+atrain,atrai
+ilmaisin,ilmaisi
+sydän,sydä_men,ntä,messä,mestä,meen
+tähtäin,tähtäi
+
+piennar,pien_taree?n,(nar|taret)ta,taree?ssa,taree?sta,taree(see)?n
+tanner,tan_teree?n,(ner|teret)ta,teree?ssa,teree?sta,teree(see)?n
+kinner,kin_teree?n,(ner|teret)tä,teree?ssä,teree?stä,teree(see)?n
+kuningatar,kuningat_taren,arta,taressa,taresta,tareen
+tytär,tyt_tären,ärtä,täressä,tärestä,täreen
+
+immyt,im_pyen,myttä,pyessä,pyestä,pyeen
+olut,olu_en,tta,essa,esta,een
+airut,airu
+neitsyt,neitsy_en,ttä,essä,estä,een
+kätkyt,kätky
+päivyt,päivy
+
+# groups for words ending in A&Ä, O&Ö and U&Y
+# IKA -> JA
+aika,a_jan,ikaa,jassa,jasta,ikaan
+rauta-aika,rauta-a
+kevät&shy;aika,kevät&shy;a
+poika,po
+# LKÄ -> LJÄ
+ylkä,y_ljän,lkää,ljässä,ljästä,lkään
+# K.  -> V.
+suku,s_uvun,ukua,uvussa,uvusta,ukuun
+kyky,k_yvyn,ykyä,yvyssä,yvystä,ykyyn
+myky,m
+# NK. -> NG.
+lanka,la_ngan,nkaa,ngassa,ngasta,nkaan
+kenkä,ke_ngän,nkää,ngässä,ngästä,nkään
+osinko,osi_ngon,nkoa,ngossa,ngosta,nkoon
+#nkö
+hinku,hi_ngun,nkua,ngussa,ngusta,nkuun
+sänky,sä_ngyn,nkyä,ngyssä,ngystä,nkyyn
+# P.  -> V.
+salpa,sal_van,paa,vassa,vasta,paan
+sotisopa,sotiso
+huopa,huo
+arpa,ar
+tapa,ta
+haapa,haa
+syöpä,syö_vän,pää,vässä,västä,pään
+kyrpä,kyr
+leipä,lei
+orpo,or_von,poa,vossa,vosta,poon
+#höpö,höp_ön,öä,össä,östä,öön
+varpu,var_vun,pua,vussa,vusta,puun
+apu,a
+kupu,ku
+kylpy,kyl_vyn,pyä,vyssä,vystä,pyyn
+häpy,hä
+# PP. -> P.
+kuoppa,kuo_pan,ppaa,passa,pasta,ppaan
+läppä,lä_pän,ppää,pässä,pästä,ppään
+happo,ha_pon,ppoa,possa,posta,ppoon
+syöppö,syö_pön,ppöä,pössä,pöstä,ppöön
+loppu,lo_pun,ppua,pussa,pusta,ppuun
+lamppu,lam
+piippu,pii
+ryppy,ry_pyn,ppyä,pyssä,pystä,ppyyn
+hyppy,hy
+ryyppy,ryy
+# T.  -> D.
+rata,ra_dan,taa,dassa,dasta,taan
+kita,ki
+hieta,hie
+kota,ko
+hauta,hau
+pöytä,pöy_dän,tää,dässä,dästä,tään
+näätä,nää
+maito,mai_don,toa,dossa,dosta,toon
+outo,ou
+löytö,löy_dön,töä,dössä,döstä,töön
+töyhtö,töyh
+utu,u_dun,tua,dussa,dusta,tuun
+itu,i
+lyhty,lyh_dyn,tyä,dyssä,dystä,tyyn
+pääty,pää
+# TT. -> T.
+lautta,lau_tan,ttaa,tassa,tasta,ttaan
+könttä,kön_tän,ttää,tässä,tästä,ttään
+portto,por_ton,ttoa,tossa,tosta,ttoon
+kyyttö,kyy_tön,ttöä,tössä,töstä,ttöön
+hattu,ha_tun,ttua,tussa,tusta,ttuun
+lätty,lä_tyn,ttyä,tyssä,tystä,ttyyn
+# K.  ->
+vika,vi_an,kaa,assa,asta,kaan
+taika,tai
+piika,pii
+sulka,sul
+ruoka,ruo
+nahka,nah
+uhka,uh
+ikä,i_än,kää,ässä,ästä,kään
+häkä,hä
+nälkä,näl
+reikä,rei
+särkkä,särk
+jako,ja_on,koa,ossa,osta,koon
+vihko,vih
+näkö,nä_ön,köä,össä,östä,köön
+maku,ma_un,kua,ussa,usta,kuun
+sulku,sul
+näky,nä_yn,kyä,yssä,ystä,kyyn
+hylky,hyl
+vaaka,vaa_'an,kaa,'assa,'asta,kaan
+ruoko,ruo_'on,koa,'ossa,'osta,koon
+tiuku,tiu_'un,kua,'ussa,'usta,kuun
+# NT. -> NN.
+ranta,ra_nnan,ntaa,nnassa,nnasta,ntaan
+mäntä,mä_nnän,ntää,nnässä,nnästä,ntään
+kanto,ka_nnon,ntoa,nnossa,nnosta,ntoon
+vääntö,vää_nnön,ntöä,nnössä,nnöstä,ntöön
+rantu,ra_nnun,ntua,nnussa,nnusta,ntuun
+mänty,mä_nnyn,ntyä,nnyssä,nnystä,ntyyn
+# RT. -> RR.
+parta,pa_rran,rtaa,rrassa,rrasta,rtaan
+#rtä
+saarto,saa_rron,rtoa,rrossa,rrosta,rtoon
+#rtö
+purtu,pu_rrun,rtua,rrussa,rrusta,rtuun
+pierty,pie_rryn,rtyä,rryssä,rrystä,rtyyn
+# LT. -> LL.
+kulta,ku_llan,ltaa,llassa,llasta,ltaan
+#ltä
+malto,ma_llon,ltoa,llossa,llosta,ltoon
+sisältö,sisä_llön,ltöä,llössä,llöstä,ltöön
+luultu,luu_llun,ltua,llussa,llusta,ltuun
+kävelty,käve_llyn,ltyä,llyssä,llystä,ltyyn
+# MP. -> MM.
+kampa,ka_mman,mpaa,mmassa,mmasta,mpaan
+#mpä
+sampo,sa_mmon,mpoa,mmossa,mmosta,mpoon
+lämpö,lä_mmön,mpöä,mmössä,mmöstä,mpöön
+kumpu,ku_mmun,mpua,mmussa,mmusta,mpuun
+#mpy
+# A&Ä
+maksa,maks_an,aa,assa,asta,aan
+inka,ink
+lattia,latti
+nasta,nast
+pihka,pihk
+pahka,pahk
+rahka,rahk
+haahka,haahk
+viuhka,viuhk
+haava,haav
+päivä,päiv_än,ää,ässä,ästä,ään
+erä,er
+täplä,täpl
+heinä,hein
+# O&Ö
+kosto,kost_on,oa,ossa,osta,oon
+auto,aut
+makeahko,makeahk
+pehko,pehk
+vihko,vihk
+hölmö,hölm_ön,öä,össä,östä,öön
+yhtälö,yhtäl
+# U&Y
+marsu,mars_un,ua,ussa,usta,uun
+lastu,last
+suihku,suihk
+syksy,syks_yn,yä,yssä,ystä,yyn
+rysty,ryst
+myky,myk
+
+#    E	ee	ett	eese
+vaje,vaj_een,etta,eessa,eesta,eeseen
+askele,askel
+vastine,vastin
+laivue,laivu
+noste,nost
+toive,toiv
+hile,hil_een,että,eessä,eestä,eeseen
+petkele,petkel
+kyynele,kyynel
+sävele,sävel
+viehe,vieh
+erhe,erh
+hilse,hils
+yhtye,yhty
+pärske,pärsk
+hyve,hyv
+terve,terv
+viive,viiv
+# LE -> TEE
+kimalle,kimal_teen,letta,teessa,teesta,teeseen
+mielle,miel_teen,lettä,teessä,teestä,teeseen
+# NE  -> TEE
+tasanne,tasan_teen,netta,teessa,teesta,teeseen
+jänne,jän_teen,nettä,teessä,teestä,teeseen
+# DE  -> TEE
+sade,sa_teen,detta,teessa,teesta,teeseen
+vaihde,vaih
+vuode,vuo
+säde,sä_teen,dettä,teessä,teestä,teeseen
+tähde,täh
+päihde,päih
+# LJE -> LKEE
+palje,pa_lkeen,ljetta,lkeessa,lkeesta,lkeeseen
+hylje,hy_lkeen,ljettä,lkeessä,lkeestä,lkeeseen
+# HJE -> HKEE
+lahje,la_hkeen,hjetta,hkeessa,hkeesta,hkeeseen
+vehje,ve_hkeen,hjettä,hkeessä,hkeestä,hkeeseen
+
+# TE  -> TTEE
+laite,lai_tteen,tetta,tteessa,tteesta,tteeseen
+puute,puu
+liete,lie_tteen,tettä,tteessä,tteestä,tteeseen
+sepite,sepi
+jäte,jä
+miete,mie
+# KE  -> KKEE
+sarake,sara_kkeen,ketta,kkeessa,kkeesta,kkeeseen
+hanke,han
+vastike,vasti
+virke,vir_kkeen,kettä,kkeessä,kkeestä,kkeeseen
+# PE -> PPEE
+ape,a_ppeen,petta,ppeessa,ppeesta,ppeeseen
+ripe,ri_ppeen,pettä,ppeessä,ppeestä,ppeeseen
+# AE -> AKEE
+tae,t_akeen,aetta,akeessa,akeesta,akeeseen
+säe,s_äkeen,äettä,äkeessä,äkeestä,äkeeseen
+# IE -> IKEE
+aie,a_ikeen,ietta,ikeessa,ikeesta,ikeeseen
+hääyöaie,hääyöa
+# VE  -> PEE
+turve,tur_peen,vetta,peessa,peesta,peeseen
+tarve,tar
+taive,tai
+kuve,ku
+viive,vii_peen,vettä,peessä,peestä,peeseen
+
+#perestroika,perestroi
+#glasnost,glasnos
+
+#suuri,suur_en,ta,essa,esta,een
+#yli&shy;suuri,yli&shy;suur
+#juuri,juur
+#lohi,loh
+#tuli,tul
+#avo&shy;tuli,avo&shy;tul
+#vuori,vuor
+#suoli,suol
+#pieni,pien_en,tä,essä,estä,een
+#kieli,kiel
+#riihi,riih
+#tiili,tiil
+#puna&shy;tiili,puna&shy;tiil
+#meri,mer_en,ta,essä,estä,een
+#avo&shy;meri,avo&shy;mer
+#veri,ver
+#laskimo&shy;veri,laskimo&shy;ver
+# I
+valssi,valss_in,ia,issa,ista,iin
+sensuuri,sensuur
+hummeri,hummer
+toveri,tover
+krokotiili,krokotiil
+paituli,paitul
+koksi,koks
+satsi,sats
+lasi,las
+#kapi,kap
+kuosi,kuos
+aasi,aas
+relapsi,relaps
+kaali,kaal
+puomi,puom
+raami,raam
+faasi,faas
+binomi,binom
+aari,aar
+vuori,vuor
+seksi,seks_in,iä,issä,istä,iin
+lääni,lään
+vitsi,vits
+rypsi,ryps
+teesi,tees
+siili,siil
+viini,viin
+pihvi,pihv
+minimi,minim
+wiki,wik
+# NKI->NGI
+mahonki,maho_ngin,nkia,ngissa,ngista,nkiin
+renki,re_ngin,nkiä,ngissä,ngistä,nkiin
+# _NKI->_NGE
+kanki,k_angen,ankea,angessa,angesta,ankeen
+onki,,ongen,onkea,ongessa,ongesta,onkeen
+mato-onki,mato-
+sänki,s_ängen,änkeä,ängessä,ängestä,änkeen
+henki,h_engen,enkeä,engessä,engestä,enkeen
+# VI->VE
+talvi,tal_ven,vea,vessa,vesta,veen
+savi,sa
+pilvi,pil_ven,veä,vessä,vestä,veen
+tyvi,ty
+# PI->VE
+rupi,ru_ven,pea,vessa,vesta,peen
+kilpi,kil_ven,peä,vessä,vestä,peen
+# PPI->PI
+etappi,eta_pin,ppia,pissa,pista,ppiin
+kaappi,kaa
+pappi,pa
+harppi,har
+tyyppi,tyy_pin,ppiä,pissä,pistä,ppiin
+# _PPI->_PE
+happi,h_apen,appea,apessa,apesta,appeen
+appi,
+typpi,t_ypen,yppeä,ypessä,ypestä,yppeen
+# HTI->HDI
+tahti,ta_hdin,htia,hdissa,hdista,htiin
+sahti,sa
+ahti,a
+pihti,pi_hdin,htiä,hdissä,hdistä,htiin
+# _HTI->_HDE
+lahti,l_ahden,ahtea,ahdessa,ahdesta,ahteen
+lehti,l_ehden,ehteä,ehdessä,ehdestä,ehteen
+tähti,t_ähden,ähteä,ähdessä,ähdestä,ähteen
+# IMI->IME
+nimi,n_imen,imeä,imessä,imestä,imeen
+toimi&shy;nimi,toimi&shy;n
+# MI->ME
+lumi,lu_men,(nt|me)a,messa,mesta,meen
+loimi,loi
+luomi,luo
+taimi,tai
+toimi,toi
+tuomi,tuo
+liemi,lie_men,(nt|me)ä,messä,mestä,meen
+niemi,nie
+seimi,sei
+# _KI->_I
+#laki,l_ain,akia,aissa,aista,akiin
+# KI->E
+joki,jo_en,kea,essa,esta,keen
+#laki,la
+reki,re_en,keä,essä,estä,keen
+# SI->DE
+paasi,paa_den,tta,dessa,desta,teen
+vuosi,vuo
+susi,su
+kuusi,kuu
+hiisi,hii_den,ttä,dessä,destä,teen
+vesi,ve
+mesi,me
+käsi,kä
+viisi,vii
+
+# RKI->RJE
+kurki,ku_rjen,rkea,rjessa,rjesta,rkeen
+arki,a
+järki,jä_rjen,rkeä,rjessä,rjestä,rkeen
+# LKI->LJE
+olki,o_ljen,lkea,ljessa,ljesta,lkeen
+telki,te_ljen,lkeä,ljessä,ljestä,lkeen
+# KSI->KSE
+saksi,sa_ksen,ksea,ksessa,ksesta,kseen
+vuoksi,vuo
+uksi,u
+suksi,su
+sääksi,sää_ksen,kseä,ksessä,ksestä,kseen
+# TSI->TSE
+veitsi,vei_tsen,stä,tsessä,tsestä,tseen
+peitsi,pei
+#suitsi
+#päitsi
+# PSI->PSE
+lapsi,la_psen,sta,psessa,psesta,pseen
+otto&shy;lapsi,otto&shy;la
+# RSI->RRE
+varsi,va_rren,rtta,rressa,rresta,rteen
+orsi,o
+hirsi,hi_rren,rttä,rressä,rrestä,rteen
+# MPI->MME
+kampi,ka_mmen,mpea,mmessa,mmesta,mpeen
+lempi,le_mmen,mpeä,mmessä,mmestä,mpeen
+
+# KKI->KI
+lakki,la_kin,kkia,kissa,kista,kkiin
+täkki,tä_kin,kkiä,kissä,kistä,kkiin
+# _KI->_I
+laki,l_ain,akia,aissa,aista,akiin
+# TTI->TI
+vartti,var_tin,ttia,tissa,tista,ttiin
+vintti,vin_tin,ttiä,tissä,tistä,ttiin
+# TI->DI
+vati,va_din,tia,dissa,dista,tiin
+#
+
+aihio,aihi_[oö]n,(?:ota|ötä),(?:ossa|össä),(?:osta|östä),([oö])\1n
+ilmiö,ilmi
+
+# edge cases: (sen)suuri->sensuurin/suuren, (hum)meri, (to)veri, (kroko)tiili,
+#   (pai)tuli, (vi)uhka, (re)lapsi, (mah)onki, (p)appi, (toi)(mi)nimi, 
+#   (kevä)(t)aika, (l)ääni, (k)aari, (h)uusi; (ta)kuu->takuuseen/kuuhun
+# compound words without dash (see above) and with it: rauta-aika, mato-onki
+# exceptions to vowel harmony: veri->verta&veressä, meri
+# apostrophes between vowels: vaaka->vaa'an, valtias->valtiaan
+# choices between acceptables forms: myky->myvyn/mykyn, ruoka->ruoan/ruuan
+# choices between different meanings: viini->viinin/en, laki->lain/en,
+#   vuori->vuorin/en, kuusi->kuusen/den (kuusi_/kuu_si)
+# complementary forms: askel(e), sammal(e), kyynel(e)
+# curiosities: haapa/haava->haavan
