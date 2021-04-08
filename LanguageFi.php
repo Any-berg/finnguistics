@@ -57,7 +57,7 @@ class LanguageFi extends Language {
       '|([tnr]t|[mp]?p|nk)[äoöuy]|([tnr]t|[mp]?p|(?<!i)nk)a'.
       '|(?<!h)k[äoöuy]|(?<=(?<!h|in)|nah|\buh)ka'.
       '|(?<![ae]h)ko|(?<!s|au)l?to|(?<!s)l?t[aäöuy]'.
-      '|(?<!a)a|(?<!ä)ä|(?<!u|o)o|(?<!y|ö)ö|(?<!u)u|(?<!y)y'.
+      '|(?<!a)a|(?<!ä)ä|(?<!u|o)o|(?<!y|ö)ö|(?<!i|u)u|(?<!y)y'.
       '|((?<=l)l|(?<=n)n|[lh]j|(?<!t)i|[aädp]|(?<!s)[tk]|'.
           '(?<!oi|er|y)v|(?<!i|e))e'.
       '|t?ti'.
@@ -114,7 +114,7 @@ class LanguageFi extends Language {
             'd', '',
             'p', 'v', 'd', '' ], $ar[1]);
       case 'illative':
-        $e = preg_match( '/([aeo]|(?<=u)u|(?<=y)y|ä|ö)$/', $ar[0] ) ? '' : 'e';
+        $e = preg_match( '/([aeo]|(?<=i|u)u|(?<=y)y|ä|ö)$/', $ar[0] ) ? '':'e';
         $ar[1] = preg_replace(
           [ '/^(?=e$)/', '/^$/', '/^([kai]|ä)e$/',		    # >(KI)   T
             '/^[lnd](?=e$)/', '/^(te)$/',			    # >(SI)   L
@@ -177,8 +177,8 @@ class LanguageFi extends Language {
           [ '/((?<!m)a|((?<!\bt)|(?<=ät))e|i|o|(?<=[st]t|(?<!\b)k)u'.
                      '|(?<=t|v|(?<!\b)p)ä)\1$/',
             '/(ä|ö|[^n])$/', # unless last letter is 'n', double it and  add 'n'
-            '/((?<=ma)a|(?<=i|e)e|(?<=u)[ou]|(?<=y)y|(?<=[yö])ö|(?<=ä)ä)\1n$/'
-          ],
+            '/((?<=ma)a|(?<=i|e)e|(?<=i|u)u|(?<=u)o'.
+                      '|(?<=y)y|(?<=[yö])ö|(?<=ä)ä)\1n$/' ],
           [ '\1\1se',
             '\1\1n',
             '\1h\1n' ], $word);
