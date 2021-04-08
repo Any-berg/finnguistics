@@ -528,9 +528,6 @@ vintti,vin_tin,ttiä,tissä,tistä,ttiin
 vati,va_din,tia,dissa,dista,tiin
 #
 
-aihio,aihi_[oö]n,(?:ota|ötä),(?:ossa|össä),(?:osta|östä),([oö])\1n
-ilmiö,ilmi
-
 # edge cases: (sen)suuri->sensuurin/suuren, (hum)meri, (to)veri, (kroko)tiili,
 #   (pai)tuli, (vi)uhka, (re)lapsi, (mah)onki, (p)appi, (toi)(mi)nimi, 
 #   (kevä)(t)aika, (l)ääni, (k)aari, (h)uusi; (ta)kuu->takuuseen/kuuhun

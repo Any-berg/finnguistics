@@ -72,7 +72,7 @@ class LanguageFi extends Language {
       '|(?<=s|m|v|k|(?<!e)n|(?<!e|o|\btu|\btii)l|'.
           '(?<!o|\b[mv]e|\b[sj]uu|kaa)r)(?<!(jo|ku)us|\bään)i'.
     ')$/u';
-    $ar = preg_split ( $pattern , $word , -1 , PREG_SPLIT_DELIM_CAPTURE); #|PREG_SPLIT_NO_EMPTY );
+    $ar = preg_split ( $pattern , $word , -1 , PREG_SPLIT_DELIM_CAPTURE);
     if ($test && $ar[0] != $test)
       return $ar[0].'_'.(count($ar) > 1 ? $ar[1] : '');
  
@@ -141,10 +141,10 @@ class LanguageFi extends Language {
         break;
       case 'partitive':
         $ar[1] = preg_replace(
-          [ '/nen$/', '/(?<=^|[strln]|io|iö)$|(?<=^[uy]t)e$/', 
+          [ '/nen$/', '/(?<=^|[strln]|io|iö)$|(?<=^[uy]t)e$/',
             '/mi$/', '/^[tp]se$/',
             '/(?<=^r)si$|(?<=(?<![nlr]k|[mp]p|ht|im|ks)e)$|^t€$/', '/€$/' ],
-          [ 's', 't', 
+          [ 's', 't',
             'nt', 'st',
             'tt', 'e' ], $ar[1]);
         break;
@@ -189,91 +189,92 @@ class LanguageFi extends Language {
     return $word;
   }
 
-	/**
-	 * @param string $str
-	 * @param User|null $user User object to use timezone from or null for $wgUser
-	 * @param int $now Current timestamp, for formatting relative block durations
-	 * @return string
-	 */
-	public function translateBlockExpiry( $str, User $user = null, $now = 0 ) {
-		/*
-			'ago', 'now', 'today', 'this', 'next',
-			'first', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth',
-				'tenth', 'eleventh', 'twelfth',
-			'tomorrow', 'yesterday'
+  /**
+   * @param string $str
+   * @param User|null $user User object to use timezone from or null for $wgUser
+   * @param int $now Current timestamp, for formatting relative block durations
+   * @return string
+   */
+  public function translateBlockExpiry( $str, User $user = null, $now = 0 ) {
+  /*
+    'ago', 'now', 'today', 'this', 'next',
+    'first', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth',
+    'tenth', 'eleventh', 'twelfth',
+    'tomorrow', 'yesterday'
 
-			$months = 'january:tammikuu,february:helmikuu,march:maaliskuu,april:huhtikuu,' .
-				'may:toukokuu,june:kesäkuu,july:heinäkuu,august:elokuu,september:syyskuu,' .
-				'october:lokakuu,november:marraskuu,december:joulukuu,' .
-				'jan:tammikuu,feb:helmikuu,mar:maaliskuu,apr:huhtikuu,jun:kesäkuu,' .
-				'jul:heinäkuu,aug:elokuu,sep:syyskuu,oct:lokakuu,nov:marraskuu,' .
-				dec:joulukuu,sept:syyskuu';
-		*/
-		$weekds = [
-			'monday' => 'maanantai',
-			'tuesday' => 'tiistai',
-			'wednesday' => 'keskiviikko',
-			'thursday' => 'torstai',
-			'friday' => 'perjantai',
-			'saturday' => 'lauantai',
-			'sunday' => 'sunnuntai',
-			'mon' => 'ma',
-			'tue' => 'ti',
-			'tues' => 'ti',
-			'wed' => 'ke',
-			'wednes' => 'ke',
-			'thu' => 'to',
-			'thur' => 'to',
-			'thurs' => 'to',
-			'fri' => 'pe',
-			'sat' => 'la',
-			'sun' => 'su',
-			'next' => 'seuraava',
-			'tomorrow' => 'huomenna',
-			'ago' => 'sitten',
-			'seconds' => 'sekuntia',
-			'second' => 'sekunti',
-			'secs' => 's',
-			'sec' => 's',
-			'minutes' => 'minuuttia',
-			'minute' => 'minuutti',
-			'mins' => 'min',
-			'min' => 'min',
-			'days' => 'päivää',
-			'day' => 'päivä',
-			'hours' => 'tuntia',
-			'hour' => 'tunti',
-			'weeks' => 'viikkoa',
-			'week' => 'viikko',
-			'fortnights' => 'tuplaviikkoa',
-			'fortnight' => 'tuplaviikko',
-			'months' => 'kuukautta',
-			'month' => 'kuukausi',
-			'years' => 'vuotta',
-			'year' => 'vuosi',
-			'infinite' => 'ikuinen',
-			'indefinite' => 'ikuinen',
-			'infinity' => 'ikuinen'
-		];
+    $months = 
+      'january:tammikuu,february:helmikuu,march:maaliskuu,april:huhtikuu,'.
+      'may:toukokuu,june:kesäkuu,july:heinäkuu,august:elokuu,'.
+      'september:syyskuu,october:lokakuu,november:marraskuu,december:joulukuu,'.
+      'jan:tammikuu,feb:helmikuu,mar:maaliskuu,apr:huhtikuu,jun:kesäkuu,'.
+      'jul:heinäkuu,aug:elokuu,sep:syyskuu,oct:lokakuu,nov:marraskuu,'.
+      'dec:joulukuu,sept:syyskuu';
+    */
+    $weekds = [
+      'monday' => 'maanantai',
+      'tuesday' => 'tiistai',
+      'wednesday' => 'keskiviikko',
+      'thursday' => 'torstai',
+      'friday' => 'perjantai',
+      'saturday' => 'lauantai',
+      'sunday' => 'sunnuntai',
+      'mon' => 'ma',
+      'tue' => 'ti',
+      'tues' => 'ti',
+      'wed' => 'ke',
+      'wednes' => 'ke',
+      'thu' => 'to',
+      'thur' => 'to',
+      'thurs' => 'to',
+      'fri' => 'pe',
+      'sat' => 'la',
+      'sun' => 'su',
+      'next' => 'seuraava',
+      'tomorrow' => 'huomenna',
+      'ago' => 'sitten',
+      'seconds' => 'sekuntia',
+      'second' => 'sekunti',
+      'secs' => 's',
+      'sec' => 's',
+      'minutes' => 'minuuttia',
+      'minute' => 'minuutti',
+      'mins' => 'min',
+      'min' => 'min',
+      'days' => 'päivää',
+      'day' => 'päivä',
+      'hours' => 'tuntia',
+      'hour' => 'tunti',
+      'weeks' => 'viikkoa',
+      'week' => 'viikko',
+      'fortnights' => 'tuplaviikkoa',
+      'fortnight' => 'tuplaviikko',
+      'months' => 'kuukautta',
+      'month' => 'kuukausi',
+      'years' => 'vuotta',
+      'year' => 'vuosi',
+      'infinite' => 'ikuinen',
+      'indefinite' => 'ikuinen',
+      'infinity' => 'ikuinen'
+    ];
 
-		$final = '';
-		$tokens = explode( ' ', $str );
-		foreach ( $tokens as $item ) {
-			if ( !is_numeric( $item ) ) {
-				if ( count( explode( '-', $item ) ) == 3 && strlen( $item ) == 10 ) {
-					list( $yyyy, $mm, $dd ) = explode( '-', $item );
-					$final .= ' ' . $this->date( "{$yyyy}{$mm}{$dd}000000" );
-					continue;
-				}
-				if ( isset( $weekds[$item] ) ) {
-					$final .= ' ' . $weekds[$item];
-					continue;
-				}
-			}
+    $final = '';
+    $tokens = explode( ' ', $str );
+    foreach ( $tokens as $item ) {
+      if ( !is_numeric( $item ) ) {
+        if ( count( explode( '-', $item ) ) == 3 && strlen( $item ) == 10 ) {
+          list( $yyyy, $mm, $dd ) = explode( '-', $item );
+          $final .= ' ' . $this->date( "{$yyyy}{$mm}{$dd}000000" );
+          continue;
+        }
+        if ( isset( $weekds[$item] ) ) {
+          $final .= ' ' . $weekds[$item];
+          continue;
+        }
+      }
 
-			$final .= ' ' . $item;
-		}
+      $final .= ' ' . $item;
+    }
 
-		return trim( $final );
-	}
+    return trim( $final );
+  }
 }
