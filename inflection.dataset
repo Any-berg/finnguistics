@@ -269,6 +269,9 @@ sampo,sa_mmon,mpoa,mmossa,mmosta,mpoon
 lämpö,lä_mmön,mpöä,mmössä,mmöstä,mpöön
 kumpu,ku_mmun,mpua,mmussa,mmusta,mpuun
 #mpy
+# IO -> IO
+aihio,aih_ion,iota,iossa,iosta,ioon
+ilmiö,ilm_iön,iötä,iössä,iöstä,iöön
 # A&Ä
 maksa,maks_an,aa,assa,asta,aan
 inka,ink

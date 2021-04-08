@@ -57,7 +57,7 @@ class LanguageFi extends Language {
       '|([tnr]t|[mp]?p|nk)[äoöuy]|([tnr]t|[mp]?p|(?<!i)nk)a'.
       '|(?<!h)k[äoöuy]|(?<=(?<!h|in)|nah|\buh)ka'.
       '|(?<![ae]h)ko|(?<!s|au)l?to|(?<!s)l?t[aäöuy]'.
-      '|(?<!a)a|(?<!ä)ä|(?<!u|o)o|(?<!y|ö)ö|(?<!i|u)u|(?<!y)y'.
+      '|(?<!a)a|(?<!ä)ä|i[oö]|(?<!u|o)o|(?<!y|ö)ö|(?<!i|u)u|(?<!y)y'.
       '|((?<=l)l|(?<=n)n|[lh]j|(?<!t)i|[aädp]|(?<!s)[tk]|'.
           '(?<!oi|er|y)v|(?<!i|e))e'.
       '|t?ti'.
@@ -141,9 +141,11 @@ class LanguageFi extends Language {
         break;
       case 'partitive':
         $ar[1] = preg_replace(
-          [ '/nen$/', '/(?<=^|[strln])$|(?<=^[uy]t)e$/', '/mi$/', '/^[tp]se$/',
+          [ '/nen$/', '/(?<=^|[strln]|io|iö)$|(?<=^[uy]t)e$/', 
+            '/mi$/', '/^[tp]se$/',
             '/(?<=^r)si$|(?<=(?<![nlr]k|[mp]p|ht|im|ks)e)$|^t€$/', '/€$/' ],
-          [ 's', 't', 'nt', 'st',
+          [ 's', 't', 
+            'nt', 'st',
             'tt', 'e' ], $ar[1]);
         break;
     }
