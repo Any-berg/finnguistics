@@ -71,9 +71,9 @@ class LanguageFi extends Language {
       '|((?<=\bn)i|(?<!a|n[io]|puo))mi'. # (mi)nimi,-nomi,puomi,raami
       '|(?<=s|m|v|k|(?<!e)n|(?<!e|o|\btu|\btii)l|'.
           '(?<!o|\b[mv]e|\b[sj]uu|kaa)r)(?<!(jo|ku)us|\bään)i'.
-    ')$/u';
+    ')$/ui';
     $ar = preg_split ( $pattern , $word , -1 , PREG_SPLIT_DELIM_CAPTURE);
-    if ($test && $ar[0] != $test)
+    if ($test && !preg_match( '/^'.$test.'$/i', $ar[0] ))
       return $ar[0].'_'.(count($ar) > 1 ? $ar[1] : '');
  
     if (count($ar) > 1 )
@@ -82,7 +82,7 @@ class LanguageFi extends Language {
       $ar[1] = '';
       if ( preg_match( '/i$/', $ar[0] ) ) {
         $ar[0] = substr($ar[0], 0, -1);
-        if (preg_match('/\b[vm]er$/', $ar[0]) && $case == 'partitive')
+        if (preg_match('/\b[vm]er$/i', $ar[0]) && $case == 'partitive')
           $aou = true; # the wovel harmony of 'veri' & 'meri' is complicated
       }
     }
@@ -173,14 +173,12 @@ class LanguageFi extends Language {
         $word .= ( $aou ? 'sta' : 'stä' );
         break;
       case 'illative':
-        # Double the last letter and add 'n'
-        #echo $word.':';
         $word = preg_replace(
-          [ '/((?<!m)a|((?<!\bt)|(?<=ät))e|i|o|(?<=[st]t|(?<!\b)k)u'.
+          [ '/((?<!M|m)a|((?<!\b[Tt])|(?<=ät))e|i|o|(?<=[st]t|(?<!\b)k)u'.
                      '|(?<=t|v|(?<!\b)p)ä)\1$/',
             '/(ä|ö|[^n])$/', # unless last letter is 'n', double it and  add 'n'
             '/((?<=ma)a|(?<=i|e)e|(?<=i|u)u|(?<=u)o'.
-                      '|(?<=y)y|(?<=[yö])ö|(?<=ä)ä)\1n$/' ],
+                      '|(?<=y)y|(?<=[yö])ö|(?<=ä)ä)\1n$/i' ],
           [ '\1\1se',
             '\1\1n',
             '\1h\1n' ], $word);
@@ -202,7 +200,7 @@ class LanguageFi extends Language {
     'tenth', 'eleventh', 'twelfth',
     'tomorrow', 'yesterday'
 
-    $months = 
+    $months =
       'january:tammikuu,february:helmikuu,march:maaliskuu,april:huhtikuu,'.
       'may:toukokuu,june:kesäkuu,july:heinäkuu,august:elokuu,'.
       'september:syyskuu,october:lokakuu,november:marraskuu,december:joulukuu,'.

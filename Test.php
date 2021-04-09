@@ -47,13 +47,13 @@ if ($handle) {
     if ( $data[0] == $data[1] && preg_match( '/i$/', $data[1] ) )
       $data[1] = substr( $data[1], 0, -1);
     foreach($cases as $index=>$case) {
-      $word = $language->convertGrammar( $data[0], $case, $test );
+      $word = $language->convertGrammar( ucfirst($data[0]), $case, $test );
       if ( $case == 'genitive' && preg_match( '/_/', $word ) ) {
         $_errors[0] = $word;
         break;
       }
       #break;
-      $pattern = '/^'.$data[1].$data[$index+2].'$/u';
+      $pattern = '/^'.$data[1].$data[$index+2].'$/ui';
       if ( !preg_match( $pattern, $word ) ) {
         if (!$_errors)
           $_errors = array_fill(0, count($cases), null);
@@ -71,9 +71,9 @@ if ($handle) {
   $missyllabications = [];
   foreach($issues as $word=>$_errors)
     if (strpos($_errors[0], "_") > -1)
-      array_push($missyllabications, $word."->".$_errors[0]);
+      array_push($missyllabications, ucfirst($word)."->".$_errors[0]);
     else {
-      echo $word."->".implode(',',array_filter($_errors))."\n";
+      echo ucfirst($word)."->".implode(',',array_filter($_errors))."\n";
       foreach($_errors as $index=>$case)
         if ($case)
           $errors[$index]++;
