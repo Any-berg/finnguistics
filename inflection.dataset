@@ -335,13 +335,11 @@ vuode,vuo
 säde,sä_teen,dettä,teessä,teestä,teeseen
 tähde,täh
 päihde,päih
-# LJE -> LKEE
-palje,pa_lkeen,ljetta,lkeessa,lkeesta,lkeeseen
-hylje,hy_lkeen,ljettä,lkeessä,lkeestä,lkeeseen
-# HJE -> HKEE
-lahje,la_hkeen,hjetta,hkeessa,hkeesta,hkeeseen
-vehje,ve_hkeen,hjettä,hkeessä,hkeestä,hkeeseen
-
+# JE -> KEE
+palje,pal_keen,jetta,keessa,keesta,keeseen
+lahje,lah
+hylje,hyl_keen,jettä,keessä,keestä,keeseen
+vehje,veh
 # TE  -> TTEE
 laite,lai_tteen,tetta,tteessa,tteesta,tteeseen
 puute,puu
