@@ -448,15 +448,13 @@ tyyppi,tyy_pin,ppiä,pissä,pistä,ppiin
 happi,h_apen,appea,apessa,apesta,appeen
 appi,
 typpi,t_ypen,yppeä,ypessä,ypestä,yppeen
-# HTI->HDI
-tahti,ta_hdin,htia,hdissa,hdista,htiin
-sahti,sa
-ahti,a
-pihti,pi_hdin,htiä,hdissä,hdistä,htiin
-# _HTI->_HDE
-lahti,l_ahden,ahtea,ahdessa,ahdesta,ahteen
-lehti,l_ehden,ehteä,ehdessä,ehdestä,ehteen
-tähti,t_ähden,ähteä,ähdessä,ähdestä,ähteen
+# HTI->HDE
+lahti,la_hden,htea,hdessa,hdesta,hteen
+lehti,le_hden,hteä,hdessä,hdestä,hteen
+tähti,tä
+# NTI->NNI
+anti,a_nnin,ntia,nnissa,nnista,ntiin
+synti,sy_nnin,ntiä,nnissä,nnistä,ntiin
 # IMI->IME
 nimi,n_imen,imeä,imessä,imestä,imeen
 toimi&shy;nimi,toimi&shy;n
@@ -525,7 +523,10 @@ laki,l_ain,akia,aissa,aista,akiin
 vartti,var_tin,ttia,tissa,tista,ttiin
 vintti,vin_tin,ttiä,tissä,tistä,ttiin
 # TI->DI
-vati,va_din,tia,dissa,dista,tiin
+koti,ko_din,tia,dissa,dista,tiin
+ahti,ah
+mäti,mä_din,tiä,dissä,distä,tiin
+pihti,pih
 #
 
 # edge cases: (sen)suuri->sensuurin/suuren, (hum)meri, (to)veri, (kroko)tiili,

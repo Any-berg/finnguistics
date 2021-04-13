@@ -67,7 +67,7 @@ class LanguageFi extends Language {
       '|((?<=\bla)p|r)si'.
       '|((?<!a|[^e]i)t|(?<![^u]o|e)k)si'.# -eitsi,vuoksi
       '|(?<=paa|vuo|su|[mv]e|kä|[hv]ii)si'. # paasi,vuosi,susi,vesi,käsi,hiisi
-      '|((?<=l)[ae]|(?<=t)ä)?hti|mpi'.
+      '|(?<!\ba|[^aeä])hti|nti|mpi'.
       '|((?<=\bn)i|(?<!a|n[io]|puo))mi'. # (mi)nimi,-nomi,puomi,raami
       '|(?<=s|m|v|k|(?<!e)n|(?<!e|o|\btu|\btii)l|'.
           '(?<!o|\b[mv]e|\b[sj]uu|kaa)r)(?<!(jo|ku)us|\bään)i'.
@@ -88,7 +88,7 @@ class LanguageFi extends Language {
     }
     
     $ar[1] = preg_replace(
-      [ '/(?<=u|y)s$/',	'/(?<=.(nk|pp|ht)|im|rk|[ktp]s|mp)i$/',
+      [ '/(?<=u|y)s$/',	'/(?<=.(nk|pp)|ht|im|rk|[ktp]s|mp)i$/',
         '/^si$/', '/(?<=^[pvk]|lk)i$/' ],				# > e->€
       [ 'te', 'e',
         't€', '€' ], $ar[1]);
