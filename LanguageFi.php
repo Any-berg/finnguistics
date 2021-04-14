@@ -58,7 +58,7 @@ class LanguageFi extends Language {
       '|(?<!h)k[äoöuy]|(?<=(?<!h|in)|nah|\buh)ka'.
       '|(?<![ae]h)ko|(?<!s|au)l?to|(?<!s)l?t[aäöuy]'.
       '|(?<!a)a|(?<!ä)ä|i[oö]|(?<!u|o)o|(?<!y|ö)ö|(?<!i|u)u|(?<!y)y'.
-      '|((?<=l)l|(?<=n)n|(?<=l|h)j|(?<!t)i|[aädp]|(?<!s)[tk]|'.
+      '|((?<=l)l|(?<=n)n|(?<=l|h)j|(?<!t)i|[aäodp]|(?<!s)[tk]|'.
           '(?<!oi|er|y)v|(?<!i|e))e'.
       '|t?ti'.
       '|(a|ä|\bo|(?<!r)e)?nki'.
@@ -67,7 +67,7 @@ class LanguageFi extends Language {
       '|((?<=\bla)p|r)si'.
       '|((?<!a|[^e]i)t|(?<![^u]o|e)k)si'.# -eitsi,vuoksi
       '|(?<=paa|vuo|su|[mv]e|kä|[hv]ii)si'. # paasi,vuosi,susi,vesi,käsi,hiisi
-      '|(?<!\ba|[^aeä])hti|nti|mpi'.
+      '|(?<!\ba|[^aeä])hti|nti|lti|mpi'.
       '|((?<=\bn)i|(?<!a|n[io]|puo))mi'. # (mi)nimi,-nomi,puomi,raami
       '|(?<=s|m|v|k|(?<!e)n|(?<!e|o|\btu|\btii)l|'.
           '(?<!o|\b[mv]e|\b[sj]uu|kaa)r)(?<!(jo|ku)us|\bään)i'.
@@ -116,7 +116,7 @@ class LanguageFi extends Language {
       case 'illative':
         $e = preg_match( '/([aeo]|(?<=i|u)u|(?<=y)y|ä|ö)$/', $ar[0] ) ? '':'e';
         $ar[1] = preg_replace(
-          [ '/^(?=e$)/', '/^$/', '/^([kai]|ä)e$/',		    # >(KI)   T
+          [ '/^(?=e$)/', '/^$/', '/^([kaio]|ä)e$/',		    # >(KI)   T
             '/^[lnd](?=e$)/', '/^(te)$/',			    # >(SI)   L
             '/^v(?=e$)/', '/^(pe)$/',				    # > _€
             '/^j(?=e$)/', '/(?<=^r)si$/',

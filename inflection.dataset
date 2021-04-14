@@ -361,6 +361,8 @@ säe,s_äkeen,äettä,äkeessä,äkeestä,äkeeseen
 # IE -> IKEE
 aie,a_ikeen,ietta,ikeessa,ikeesta,ikeeseen
 hääyöaie,hääyöa
+# OE -> OKEE
+koe,k_okeen,oetta,okeessa,okeesta,okeeseen
 # VE  -> PEE
 turve,tur_peen,vetta,peessa,peesta,peeseen
 tarve,tar
@@ -453,6 +455,8 @@ tähti,tä
 # NTI->NNI
 anti,a_nnin,ntia,nnissa,nnista,ntiin
 synti,sy_nnin,ntiä,nnissä,nnistä,ntiin
+# LTI->LLI
+pelti,pe_llin,ltiä,llissä,llistä,ltiin
 # IMI->IME
 nimi,n_imen,imeä,imessä,imestä,imeen
 toimi&shy;nimi,toimi&shy;n
